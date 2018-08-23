@@ -2,7 +2,7 @@ import numpy as np
 import gzip
 import pickle
 import cntk as C
-from cntk.layers import Dense, Dropout
+from cntk.layers import Dense, Dropout, BatchNormalization
 from os.path import expanduser, join
 
 
@@ -32,7 +32,7 @@ dataset_file_path = join(home, "OneDrive/Work/SAFORO Internal Training/Deep lear
 x_train, x_test, y_train, y_test = load_data(dataset_file_path)
 
 total_number_of_samples = x_train.shape[0]
-mini_batch_size = 4
+mini_batch_size = 16
 total_train_batches = int(total_number_of_samples / mini_batch_size)
 
 total_nb_test_samples = int(x_test.shape[0] / 10)  # divided by 10 to reduce test dataset
@@ -46,18 +46,21 @@ image_tensor = C.input_variable((28, 28), name="image")
 ground_truth_tensor = C.input_variable(10, name="ground_truth")
 
 # Introducing dropout layer encourages the model not to learn spurious relationships i.e. not overfit
-dropped_image = Dropout(0.5)(image_tensor)
+dropped_image = Dropout(0.3)(image_tensor)
 hidden_layer_output = Dense(shape=(16, ), activation=C.tanh)(dropped_image)
 
 # activation is None because loss function already has softmax!!
-dropped_hidden = Dropout(0.1)(hidden_layer_output)
+batch_normed_hidden = BatchNormalization()(hidden_layer_output)
+dropped_hidden = Dropout(0.1)(batch_normed_hidden)
 output_tensor = Dense(shape=(10, ), activation=None)(dropped_hidden)
 
 loss = C.cross_entropy_with_softmax(output_tensor, ground_truth_tensor)  # Used to learn parameters
 metric = C.classification_error(output_tensor, ground_truth_tensor)  # Not used to learn parameters
 
 # Always a good idea to add some regularisation to your optimiser
-adam = C.adam(output_tensor.parameters, 0.001, 0.912, l2_regularization_weight=0.001)  # optimisation scheme
+lr = [0.001] * 5 + [0.0001] * 10 + [0.00005]
+lr_schedule = C.learning_parameter_schedule(lr, minibatch_size=mini_batch_size, epoch_size=100)
+adam = C.adam(output_tensor.parameters, lr_schedule, 0.912, l2_regularization_weight=0.001)  # optimisation scheme
 pp = C.logging.ProgressPrinter(freq=0, log_to_file="mnist_dense_log.txt")
 trainer = C.Trainer(output_tensor, (loss, metric), [adam], progress_writers=pp)
 # ==================================================
