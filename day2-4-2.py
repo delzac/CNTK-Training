@@ -18,10 +18,11 @@ def load_creditcardfraud(data_filepath):
     data_df_normal = df_normal.drop(['Class'], axis=1)
     data_df_abnormal = df_abnormal.drop(['Class'], axis=1)
 
-    normal_x = data_df_normal.values
-    abnormal_x = data_df_abnormal
+    normal_x = np.ascontiguousarray(data_df_normal.values, dtype=np.float32)
+    abnormal_x = np.ascontiguousarray(data_df_abnormal.values, dtype=np.float32)
     print(f"There are {normal_x.shape[0]} normal and {abnormal_x.shape[0]} abnormal samples")
     return normal_x, abnormal_x
+
 
 home = expanduser("~")
 dataset_file_path = join(home, "OneDrive/Work/SAFORO Internal Training/Deep learning with CNTK/datasets/creditcard.csv")
@@ -36,22 +37,24 @@ total_train_batches = int(total_number_of_samples / mini_batch_size)
 # ==================================================
 # Only CNTK Computation Nodes to be used from here on
 
-image_tensor = C.input_variable(29, name="image")
+input_tensor = C.input_variable(29, name="input_tensor")
 
 # Introducing dropout layer encourages the model not to learn spurious relationships i.e. not overfit
-encoded_tensor = Dense(shape=(8, ), activation=C.tanh)(image_tensor)
+encode1 = Dense(shape=(15, ), activation=C.relu)(input_tensor)
+encode2 = Dense(shape=(8, ), activation=C.relu)(encode1)
 
 # activation is None because loss function already has softmax!!
-decoded_tensor = Dense(shape=(28, 28), activation=C.sigmoid, name='reconstructed_image')(encoded_tensor)
-anomaly_scorer = C.squared_error(decoded_tensor, image_tensor, name="anomaly_score")
+decode1 = Dense(shape=(15,), activation=C.relu)(encode2)
+decoded_tensor = Dense(shape=(29,), activation=None, name='reconstructed')(decode1)
+anomaly_scorer = C.squared_error(decoded_tensor, input_tensor, name="anomaly_score")
 
-loss = C.squared_error(decoded_tensor, image_tensor)  # Used to learn parameters
+loss = C.squared_error(decoded_tensor, input_tensor)  # Used to learn parameters
 
 # Always a good idea to add some regularisation to your optimiser
 lr = [0.001] * 5 + [0.0001] * 10 + [0.00005]
 lr_schedule = C.learning_parameter_schedule(0.001, minibatch_size=mini_batch_size, epoch_size=100)
 adam = C.adam(decoded_tensor.parameters, lr_schedule, 0.912, l2_regularization_weight=0.001)  # optimisation scheme
-pp = C.logging.ProgressPrinter(freq=10, log_to_file="autoencoder_log.txt")
+pp = C.logging.ProgressPrinter(freq=10, log_to_file="autoencoder_creditcard_log.txt")
 trainer = C.Trainer(decoded_tensor, (loss, ), [adam], progress_writers=pp)
 # ==================================================
 # ==================================================
@@ -62,16 +65,16 @@ for e in range(nb_epoches):
     for mb_idx in range(total_train_batches):
 
         lbound, ubound = mb_idx * mini_batch_size, (mb_idx + 1) * mini_batch_size
-        data_x = x_train[lbound: ubound, ...]  # first dimension is the batch axis
+        data_x = normal_x[lbound: ubound, ...]  # first dimension is the batch axis
 
-        trainer.train_minibatch({image_tensor: data_x})
+        trainer.train_minibatch({input_tensor: data_x})
 
-        print(f"loss: {trainer.previous_minibatch_loss_average:.4f}")
+        # print(f"loss: {trainer.previous_minibatch_loss_average:.4f}")
 
     trainer.summarize_training_progress()
 
-# Evaluation of test case
-anomaly_scores = anomaly_scorer.eval({image_tensor: anomaly_test_case})
-print(f"Anomaly score on handcrafted anomaly test cases are {anomaly_scores}")
+anomaly_scorer.save("autoencoder_creditcard.model")
 
-anomaly_scorer.save("autoencoder.model")
+# Evaluation of test case
+anomaly_scores = anomaly_scorer.eval({input_tensor: abnormal_x[:5]})
+print(f"Anomaly score on handcrafted anomaly test cases are {anomaly_scores}")
