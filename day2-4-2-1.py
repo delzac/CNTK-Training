@@ -40,6 +40,8 @@ for i in range(total_mb):
     data_x = abnormal_x[lbound:ubound]
     result.append(scorer.eval({scorer.arguments[0]: data_x}))
 
+# The one thing i didn't do is that i never hold out
+# normal samples to test and see if i got any false positives
 threshold = 50
 nb_detected = sum(i > threshold for i in result)
 accuracy = nb_detected / total_image_samples
