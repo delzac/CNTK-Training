@@ -2,7 +2,7 @@ import numpy as np
 import gzip
 import pickle
 import cntk as C
-from cntk.layers import Dense
+from cntk.layers import Dense, Dropout
 from os.path import expanduser, join
 
 
@@ -45,10 +45,13 @@ total_test_batches = int(total_nb_test_samples / mini_batch_size)
 image_tensor = C.input_variable((28, 28), name="image")
 ground_truth_tensor = C.input_variable(10, name="ground_truth")
 
-hidden_layer_output = Dense(shape=(16, ), activation=C.tanh)(image_tensor)
+# Introducing dropout layer encourages the model not to learn spurious relationships i.e. not overfit
+dropped_image = Dropout(0.5)(image_tensor)
+hidden_layer_output = Dense(shape=(16, ), activation=C.tanh)(dropped_image)
 
 # activation is None because loss function already has softmax!!
-output_tensor = Dense(shape=(10, ), activation=None)(hidden_layer_output)
+dropped_hidden = Dropout(0.1)(hidden_layer_output)
+output_tensor = Dense(shape=(10, ), activation=None)(dropped_hidden)
 
 loss = C.cross_entropy_with_softmax(output_tensor, ground_truth_tensor)  # Used to learn parameters
 metric = C.classification_error(output_tensor, ground_truth_tensor)  # Not used to learn parameters
