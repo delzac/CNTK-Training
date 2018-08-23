@@ -53,6 +53,7 @@ output_tensor = Dense(shape=(10, ), activation=None)(hidden_layer_output)
 loss = C.cross_entropy_with_softmax(output_tensor, ground_truth_tensor)  # Used to learn parameters
 metric = C.classification_error(output_tensor, ground_truth_tensor)  # Not used to learn parameters
 
+# Always a good idea to add some regularisation to your optimiser
 adam = C.adam(output_tensor.parameters, 0.001, 0.912, l2_regularization_weight=0.001)  # optimisation scheme
 pp = C.logging.ProgressPrinter(freq=0, log_to_file="mnist_dense_log.txt")
 trainer = C.Trainer(output_tensor, (loss, metric), [adam], progress_writers=pp)
