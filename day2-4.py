@@ -4,6 +4,7 @@ import pickle
 import cntk as C
 from cntk.layers import Dense, Dropout, BatchNormalization
 from os.path import expanduser, join
+import matplotlib.pyplot as plt
 
 
 def load_data(filepath: str):
@@ -29,7 +30,7 @@ def ohe_labels(a, nb_class):
 
 home = expanduser("~")
 dataset_file_path = join(home, "OneDrive/Work/SAFORO Internal Training/Deep learning with CNTK/datasets/mnist/mnist.pkl.gz")
-x_train, __, y_train, __ = load_data(dataset_file_path)
+x_train, x_test, __, __ = load_data(dataset_file_path)
 
 anomaly_test_case_random = np.random.random((4, 28, 28))
 anomaly_test_case_white = np.ones_like(anomaly_test_case_random)
@@ -75,7 +76,6 @@ for e in range(nb_epoches):
 
         lbound, ubound = mb_idx * mini_batch_size, (mb_idx + 1) * mini_batch_size
         data_x = x_train[lbound: ubound, ...]  # first dimension is the batch axis
-        data_y = y_train[lbound: ubound, ...]
 
         trainer.train_minibatch({image_tensor: data_x})
 
