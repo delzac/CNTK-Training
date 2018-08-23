@@ -31,7 +31,7 @@ def load_creditcardfraud(data_filepath):
     data_df_normal = df_normal.drop(['Class'], axis=1)
     data_df_abnormal = df_abnormal.drop(['Class'], axis=1)
 
-    normal_x = data_df_normal.values
-    abnormal_x = data_df_abnormal
+    normal_x = np.ascontiguousarray(data_df_normal.values, dtype=np.float32)
+    abnormal_x = np.ascontiguousarray(data_df_abnormal.values, dtype=np.float32)
     print(f"There are {normal_x.shape[0]} normal and {abnormal_x.shape[0]} abnormal samples")
     return normal_x, abnormal_x
