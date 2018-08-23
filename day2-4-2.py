@@ -40,12 +40,14 @@ total_train_batches = int(total_number_of_samples / mini_batch_size)
 input_tensor = C.input_variable(29, name="input_tensor")
 
 # Introducing dropout layer encourages the model not to learn spurious relationships i.e. not overfit
-encode1 = Dense(shape=(15, ), activation=C.relu)(input_tensor)
-encode2 = Dense(shape=(8, ), activation=C.relu)(encode1)
+encode1 = Dense(shape=(20, ), activation=C.relu)(input_tensor)
+encode2 = Dense(shape=(15, ), activation=C.relu)(encode1)
+encode3 = Dense(shape=(8, ), activation=C.relu)(encode2)
 
 # activation is None because loss function already has softmax!!
-decode1 = Dense(shape=(15,), activation=C.relu)(encode2)
-decoded_tensor = Dense(shape=(29,), activation=None, name='reconstructed')(decode1)
+decode1 = Dense(shape=(15,), activation=C.relu)(encode3)
+decode2 = Dense(shape=(20,), activation=C.relu)(decode1)
+decoded_tensor = Dense(shape=(29,), activation=None, name='reconstructed')(decode2)
 anomaly_scorer = C.squared_error(decoded_tensor, input_tensor, name="anomaly_score")
 
 loss = C.squared_error(decoded_tensor, input_tensor)  # Used to learn parameters

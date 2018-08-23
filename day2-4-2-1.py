@@ -44,7 +44,7 @@ for i in range(total_mb):
 # normal samples to test and see if i got any false positives
 threshold = 50
 nb_detected = sum(i > threshold for i in result)
-accuracy = nb_detected / total_image_samples
+recall = nb_detected / total_image_samples
 print(f"Number of abnormalies are {total_image_samples}")
-print(f"{nb_detected} abnormalies detected at {threshold}")
-print(f"Accuracy is {accuracy}")
+print(f"{nb_detected} abnormalies detected with score above {threshold}")
+print(f"recall is {recall}")

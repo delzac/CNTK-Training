@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6bdbd82-cdb4-470e-85cc-45caf9f26dc6" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/autoencoder_creditcard.model" beforeDir="false" afterPath="$PROJECT_DIR$/autoencoder_creditcard.model" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/autoencoder_creditcard_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/autoencoder_creditcard_log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day2-4-2-1.py" beforeDir="false" afterPath="$PROJECT_DIR$/day2-4-2-1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day2-4-2.py" beforeDir="false" afterPath="$PROJECT_DIR$/day2-4-2.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,12 +18,12 @@
     <SUITE FILE_PATH="coverage/CNTK_Training$day2_3.coverage" NAME="day2-3 Coverage Results" MODIFIED="1535006620030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CNTK_Training$day1_2.coverage" NAME="day1-2 Coverage Results" MODIFIED="1534491024598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CNTK_Training$day2_4_1.coverage" NAME="day2-4-1 Coverage Results" MODIFIED="1535005094081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CNTK_Training$day2_4_2.coverage" NAME="day2-4-2 Coverage Results" MODIFIED="1535008178812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CNTK_Training$day2_4_2.coverage" NAME="day2-4-2 Coverage Results" MODIFIED="1535010591353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CNTK_Training$day2_2.coverage" NAME="day2-2 Coverage Results" MODIFIED="1534995688148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CNTK_Training$day2_4.coverage" NAME="day2-4 Coverage Results" MODIFIED="1535004831385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CNTK_Training$day2_1.coverage" NAME="day2-1 Coverage Results" MODIFIED="1534987887432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CNTK_Training$day1_1.coverage" NAME="day1-1 Coverage Results" MODIFIED="1534489660067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CNTK_Training$day2_4_2_1.coverage" NAME="day2-4-2-1 Coverage Results" MODIFIED="1535009395695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CNTK_Training$day2_4_2_1.coverage" NAME="day2-4-2-1 Coverage Results" MODIFIED="1535010978986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CNTK_Training$day1.coverage" NAME="day1 Coverage Results" MODIFIED="1534941442532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
@@ -52,7 +55,7 @@
       <file leaf-file-name="day2-2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day2-2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
+            <state relative-caret-position="984">
               <caret line="56" column="56" selection-start-line="56" selection-start-column="56" selection-end-line="56" selection-end-column="56" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -75,24 +78,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="day2-4-2.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="day2-4-2.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/day2-4-2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="75" column="43" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="43" />
+            <state relative-caret-position="-480">
+              <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <element signature="e#236#692#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="day2-4-2-1.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="day2-4-2-1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day2-4-2-1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="45" column="30" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
+            <state relative-caret-position="216">
+              <caret line="28" column="14" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="14" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
                 <element signature="e#236#779#0" />
@@ -104,8 +106,8 @@
       <file leaf-file-name="autoencoder_creditcard_log.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/autoencoder_creditcard_log.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-38082">
-              <caret line="16172" selection-start-line="16172" selection-end-line="16172" />
+            <state relative-caret-position="-26322">
+              <caret line="12701" selection-start-line="12701" selection-end-line="12701" />
             </state>
           </provider>
         </entry>
@@ -115,18 +117,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="353">
               <caret line="48" selection-start-line="48" selection-end-line="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="day1-2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day1-2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -360,7 +350,7 @@
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Python Console" order="3" weight="0.32890856" />
-      <window_info active="true" anchor="right" id="Run" order="5" visible="true" weight="0.54412955" />
+      <window_info active="true" anchor="right" id="Run" order="5" visible="true" weight="0.3805668" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.3278867" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.10121457" />
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
@@ -478,7 +468,6 @@
           <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
-            <element signature="e#55#471#0" />
           </folding>
         </state>
       </provider>
@@ -713,18 +702,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day2-2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="56" column="56" selection-start-line="56" selection-start-column="56" selection-end-line="56" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#100#663#0" />
-            <element signature="e#699#809#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Anaconda3/envs/Cobra/Lib/site-packages/cntk/losses/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -778,24 +755,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day2-3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-            <element signature="e#55#471#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/autoencoder_creditcard_log.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-38082">
-          <caret line="16172" selection-start-line="16172" selection-end-line="16172" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day2-4-1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
@@ -803,24 +762,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day2-4-2.py">
+    <entry file="file://$PROJECT_DIR$/day2-3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
-          <caret line="75" column="43" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="43" />
+          <caret line="33" column="40" lean-forward="true" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day2-2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="984">
+          <caret line="56" column="56" selection-start-line="56" selection-start-column="56" selection-end-line="56" selection-end-column="56" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#236#692#0" />
+            <element signature="e#100#663#0" />
+            <element signature="e#699#809#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autoencoder_creditcard_log.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26322">
+          <caret line="12701" selection-start-line="12701" selection-end-line="12701" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/day2-4-2-1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="45" column="30" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
+        <state relative-caret-position="216">
+          <caret line="28" column="14" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="14" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
             <element signature="e#236#779#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day2-4-2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-480">
+          <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
