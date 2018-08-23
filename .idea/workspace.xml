@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6bdbd82-cdb4-470e-85cc-45caf9f26dc6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/day2-4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mnist_dense_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mnist_dense_log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day2-4.py" beforeDir="false" afterPath="$PROJECT_DIR$/day2-4.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,7 +15,7 @@
     <SUITE FILE_PATH="coverage/CNTK_Training$day2_3.coverage" NAME="day2-3 Coverage Results" MODIFIED="1535000574416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CNTK_Training$day1_2.coverage" NAME="day1-2 Coverage Results" MODIFIED="1534491024598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CNTK_Training$day2_2.coverage" NAME="day2-2 Coverage Results" MODIFIED="1534995688148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CNTK_Training$day2_4.coverage" NAME="day2-4 Coverage Results" MODIFIED="1535003062226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CNTK_Training$day2_4.coverage" NAME="day2-4 Coverage Results" MODIFIED="1535004306916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CNTK_Training$day2_1.coverage" NAME="day2-1 Coverage Results" MODIFIED="1534987887432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CNTK_Training$day1_1.coverage" NAME="day1-1 Coverage Results" MODIFIED="1534489660067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CNTK_Training$day1.coverage" NAME="day1 Coverage Results" MODIFIED="1534941442532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -64,8 +63,8 @@
       <file leaf-file-name="day2-4.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/day2-4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="65" column="68" selection-start-line="65" selection-start-column="68" selection-end-line="65" selection-end-column="68" />
+            <state relative-caret-position="305">
+              <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -343,7 +342,7 @@
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Python Console" order="3" weight="0.32890856" />
-      <window_info active="true" anchor="right" id="Run" order="5" visible="true" weight="0.31983805" />
+      <window_info active="true" anchor="right" id="Run" order="5" visible="true" weight="0.22024292" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.3278867" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.10121457" />
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
@@ -795,8 +794,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/day2-4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="65" column="68" selection-start-line="65" selection-start-column="68" selection-end-line="65" selection-end-column="68" />
+        <state relative-caret-position="305">
+          <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
         </state>
       </provider>
     </entry>

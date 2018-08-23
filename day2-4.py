@@ -35,7 +35,7 @@ anomaly_test_case_random = np.random.random((4, 28, 28))
 anomaly_test_case_white = np.ones_like(anomaly_test_case_random)
 anomaly_test_case_black = np.zeros_like(anomaly_test_case_white)
 
-anomaly_test_case = np.concatenate((anomaly_test_case_random, anomaly_test_case_white, anomaly_test_case_black))
+anomaly_test_case = np.concatenate((anomaly_test_case_random, anomaly_test_case_white, anomaly_test_case_black)).astype(np.float32)
 assert anomaly_test_case.ndim == 3
 assert anomaly_test_case.shape[1:] == (28, 28)
 
