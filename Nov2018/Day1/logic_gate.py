@@ -49,7 +49,7 @@ metric = C.Constant(1) - C.equal(C.round(z), y)  # What is this code doing????
 # It can be very cumbersome to manually record and keep track
 # of the progress of your training. In CNTK, there's something that
 # helps you do just that.
-pp = C.logging.ProgressPrinter(freq=5, log_to_file="LogicGateLogs.txt", gen_heartbeat=True)
+pp = C.logging.ProgressPrinter(freq=5, log_to_file="LogicGateLogs.txt")
 
 # Next we need an optimisation scheme to vary the trainable weights
 # in a way that reduces the loss function. In any deep learning framework,
@@ -64,6 +64,7 @@ number_of_iterations = 10000
 for i in range(number_of_iterations):
     trainer.train_minibatch({x: data_x,
                              y: data_y})
+
     print(f"{i:04d} loss: {trainer.previous_minibatch_loss_average:.4f} "
           f" metric: {trainer.previous_minibatch_evaluation_average}")
 

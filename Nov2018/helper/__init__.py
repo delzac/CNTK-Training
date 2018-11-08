@@ -16,7 +16,7 @@ def load_data(filepath: str):
     y_train = ohe_labels(y_train, 10)
     y_test = ohe_labels(y_test, 10)
     print(f"Shape of train data {x_train.shape} and truth {y_train.shape}")
-    print(f"Shape of train data {x_test.shape} and truth {y_test.shape}")
+    print(f"Shape of test data {x_test.shape} and truth {y_test.shape}")
     return x_train, x_test, y_train, y_test
 
 
