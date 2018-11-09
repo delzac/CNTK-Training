@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6bdbd82-cdb4-470e-85cc-45caf9f26dc6" name="Default" comment="mnist classification example and helper functions">
-      <change afterPath="$PROJECT_DIR$/Nov2018/Day2/conv_autoencoder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nov2018/Day2/mnist_classification.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nov2018/Day2/explore_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nov2018/Day2/conv_autoencoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/Nov2018/Day2/conv_autoencoder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nov2018/Day2/mnist_classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/Nov2018/Day2/graph_visualisation.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +16,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/CNTK_Training$day2_4_2.coverage" NAME="day2-4-2 Coverage Results" MODIFIED="1535010591353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CNTK_Training$mixture_density_network.coverage" NAME="mixture_density_network Coverage Results" MODIFIED="1541660508656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Nov2018/Day1" />
+    <SUITE FILE_PATH="coverage/CNTK_Training$conv_autoencoder.coverage" NAME="conv_autoencoder Coverage Results" MODIFIED="1541740863610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Nov2018/Day2" />
     <SUITE FILE_PATH="coverage/CNTK_Training$mnist_dense_classification.coverage" NAME="mnist_dense_classification Coverage Results" MODIFIED="1541646408890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Nov2018/Day1" />
     <SUITE FILE_PATH="coverage/CNTK_Training$logic_gate.coverage" NAME="logic_gate Coverage Results" MODIFIED="1541643119905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Nov2018/Day1" />
     <SUITE FILE_PATH="coverage/CNTK_Training$day1_1.coverage" NAME="day1-1 Coverage Results" MODIFIED="1534489660067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -25,9 +27,10 @@
     <SUITE FILE_PATH="coverage/CNTK_Training$script.coverage" NAME="script Coverage Results" MODIFIED="1541663498618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Nov2018/Day1" />
     <SUITE FILE_PATH="coverage/CNTK_Training$day1.coverage" NAME="day1 Coverage Results" MODIFIED="1534941442532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CNTK_Training$day2_3.coverage" NAME="day2-3 Coverage Results" MODIFIED="1535006620030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CNTK_Training$mnist_classification.coverage" NAME="mnist_classification Coverage Results" MODIFIED="1541739235471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Nov2018/Day2" />
+    <SUITE FILE_PATH="coverage/CNTK_Training$mnist_classification.coverage" NAME="mnist_classification Coverage Results" MODIFIED="1541739484031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Nov2018/Day2" />
     <SUITE FILE_PATH="coverage/CNTK_Training$first_script.coverage" NAME="first_script Coverage Results" MODIFIED="1541640931156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Nov2018/Day1" />
     <SUITE FILE_PATH="coverage/CNTK_Training$day1_2.coverage" NAME="day1-2 Coverage Results" MODIFIED="1534491024598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CNTK_Training$explore_model.coverage" NAME="explore_model Coverage Results" MODIFIED="1541747688082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Nov2018/Day2" />
     <SUITE FILE_PATH="coverage/CNTK_Training$day2_4_1.coverage" NAME="day2-4-1 Coverage Results" MODIFIED="1535005094081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CNTK_Training$day2_4_2_1.coverage" NAME="day2-4-2-1 Coverage Results" MODIFIED="1535010978986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CNTK_Training$autoencoder.coverage" NAME="autoencoder Coverage Results" MODIFIED="1541656402553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Nov2018/Day1" />
@@ -37,37 +40,39 @@
     <session id="-1439660574">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.13" value="1" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="31" />
+          <entry key="png" value="1" />
+          <entry key="py" value="37" />
           <entry key="text" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="Image" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="31" />
+          <entry key="Python" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="28" />
-          <entry key="dummy" value="15" />
-          <entry key="py" value="5396" />
+          <entry key="dummy" value="34" />
+          <entry key="py" value="6520" />
           <entry key="txt" value="88" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="103" />
-          <entry key="Python" value="5424" />
+          <entry key="PLAIN_TEXT" value="122" />
+          <entry key="Python" value="6548" />
         </counts>
       </usages-collector>
     </session>
@@ -75,55 +80,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Nov2018/Day1/sine_regression.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="5" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#45#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Nov2018/Day1/mnist_dense_classification.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="957">
-              <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#16#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Nov2018/Day1/mixture_density_network.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="84" column="15" selection-start-line="84" selection-start-column="15" selection-end-line="84" selection-end-column="15" />
-              <folding>
-                <element signature="e#0#45#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Nov2018/Day2/conv_autoencoder.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-              <folding>
-                <element signature="e#0#16#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Nov2018/Day2/mnist_classification.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
               <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
@@ -135,9 +92,48 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Nov2018/Day2/graph_visualisation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Nov2018/Day2/explore_model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="99">
+              <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/Anaconda3/envs/Cobra/Lib/site-packages/skimage/color/colorconv.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="474">
+              <caret line="807" column="35" lean-forward="true" selection-start-line="805" selection-start-column="4" selection-end-line="807" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/Anaconda3/envs/Cobra/Lib/site-packages/cntk/logging/graph.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="33">
+              <caret line="178" column="4" selection-start-line="178" selection-start-column="4" selection-end-line="178" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://C:/Anaconda3/envs/Cobra/Lib/site-packages/cntk/ops/functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
+            <state relative-caret-position="541">
               <caret line="1714" column="53" selection-start-line="1714" selection-start-column="42" selection-end-line="1714" selection-end-column="53" />
             </state>
           </provider>
@@ -224,6 +220,8 @@
         <option value="$PROJECT_DIR$/Nov2018/Day1/mixture_density_network.py" />
         <option value="$PROJECT_DIR$/Nov2018/Day2/conv_autoencoder.py" />
         <option value="$PROJECT_DIR$/Nov2018/Day2/mnist_classification.py" />
+        <option value="$PROJECT_DIR$/Nov2018/Day2/graph_visualisation.py" />
+        <option value="$PROJECT_DIR$/Nov2018/Day2/explore_model.py" />
       </list>
     </option>
   </component>
@@ -234,10 +232,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-10" />
+    <option name="width" value="1390" />
+    <option name="height" value="1756" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -306,8 +303,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.mnist_classification">
-    <configuration name="autoencoder" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.explore_model">
+    <configuration name="conv_autoencoder" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CNTK-Training" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -315,12 +312,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Nov2018/Day1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Nov2018/Day2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Nov2018/Day1/autoencoder.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Nov2018/Day2/conv_autoencoder.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="explore_model" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CNTK-Training" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Nov2018/Day2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Nov2018/Day2/explore_model.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -351,28 +370,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="mixture_density_network" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="CNTK-Training" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Nov2018/Day1" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\delzac\OneDrive\Python Projects\CNTK-Training\Nov2018\Day1\sine_regression.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="mnist_classification" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CNTK-Training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -386,7 +383,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Nov2018/Day2/mnist_classification.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\delzac\OneDrive\Python Projects\CNTK-Training\Nov2018\Day2\graph_visualisation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -418,19 +415,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.autoencoder" />
-      <item itemvalue="Python.mixture_density_network" />
       <item itemvalue="Python.mixture_density_network (1)" />
       <item itemvalue="Python.script" />
       <item itemvalue="Python.mnist_classification" />
+      <item itemvalue="Python.conv_autoencoder" />
+      <item itemvalue="Python.explore_model" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.explore_model" />
+        <item itemvalue="Python.conv_autoencoder" />
         <item itemvalue="Python.mnist_classification" />
         <item itemvalue="Python.mixture_density_network (1)" />
         <item itemvalue="Python.script" />
-        <item itemvalue="Python.mixture_density_network" />
-        <item itemvalue="Python.autoencoder" />
       </list>
     </recent_temporary>
   </component>
@@ -464,6 +461,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.17384732" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -485,7 +483,7 @@
       <window_info anchor="right" id="Commander" order="2" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
-      <window_info anchor="right" id="Run" order="5" weight="0.15570673" />
+      <window_info anchor="right" id="Run" order="5" weight="0.13756613" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -676,9 +674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1287">
           <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -686,16 +681,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="792">
           <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Nov2018/Day1/first_script.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Anaconda3/envs/Cobra/Lib/site-packages/cntk/layers/layers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="1296" column="4" selection-start-line="1296" selection-start-column="4" selection-end-line="1296" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Nov2018/Day1/sine_regression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Nov2018/Day1/mnist_dense_classification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Nov2018/Day1/script.py">
+    <entry file="file://$PROJECT_DIR$/Nov2018/Day1/mixture_density_network.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state>
+          <caret line="84" column="15" selection-start-line="84" selection-start-column="15" selection-end-line="84" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -723,77 +749,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Nov2018/Day1/mixture_density_network.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="84" column="15" selection-start-line="84" selection-start-column="15" selection-end-line="84" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Nov2018/Day2/conv_autoencoder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Nov2018/Day1/first_script.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Nov2018/Day1/sine_regression.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="5" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Nov2018/Day1/mnist_dense_classification.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="957">
-          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Anaconda3/envs/Cobra/Lib/site-packages/cntk/layers/layers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="1296" column="4" selection-start-line="1296" selection-start-column="4" selection-end-line="1296" selection-end-column="4" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Nov2018/Day2/model.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://C:/Anaconda3/envs/Cobra/Lib/site-packages/cntk/ops/functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
+        <state relative-caret-position="541">
           <caret line="1714" column="53" selection-start-line="1714" selection-start-column="42" selection-end-line="1714" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Nov2018/Day2/mnist_classification.py">
+    <entry file="file://$PROJECT_DIR$/Nov2018/Day1/script.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Nov2018/Day2/conv_autoencoder.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Nov2018/Day2/graph_visualisation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Anaconda3/envs/Cobra/Lib/site-packages/numpy/lib/function_base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="140" column="4" selection-start-line="140" selection-start-column="4" selection-end-line="140" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Anaconda3/envs/Cobra/Lib/site-packages/cntk/logging/graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="178" column="4" selection-start-line="178" selection-start-column="4" selection-end-line="178" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Anaconda3/envs/Cobra/Lib/site-packages/skimage/color/colorconv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="807" column="35" lean-forward="true" selection-start-line="805" selection-start-column="4" selection-end-line="807" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Nov2018/Day2/explore_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
         </state>
       </provider>
     </entry>
