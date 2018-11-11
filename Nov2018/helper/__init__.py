@@ -60,3 +60,33 @@ def load_creditcardfraud(data_filepath):
     abnormal_x = np.ascontiguousarray(data_df_abnormal.values, dtype=np.float32)
     print(f"There are {normal_x.shape[0]} normal and {abnormal_x.shape[0]} abnormal samples")
     return normal_x, abnormal_x
+
+
+def generate_seq2seq_toy(n: int, vocab_size: int, min_seq_length: int, max_seq_length: int, mode='copy'):
+    """
+
+    Arguments:
+        n (int): number of sequences to generate
+        vocab_size (int): dim of word vector
+        min_seq_length (int): min sequence length
+        max_seq_length (int): max sequence length
+        mode (str): if copy, target is same as source sequence, if reverse, target is reversed of source sequence
+
+    """
+
+    seq_lengths = [random.randint(min_seq_length, max_seq_length) for __ in range(n)]
+    source_seqs = [np.array([random.randrange(vocab_size) for __ in range(seq_length)]) for seq_length in seq_lengths]
+    source_seqs = [ohe_labels(seq, vocab_size) for seq in source_seqs]
+
+    if mode == 'copy':
+        target_seqs = source_seqs
+    elif mode == 'reverse':
+        target_seqs = [seq[::-1, ...] for seq in source_seqs]
+    elif mode == 'skipcopy':
+        target_seqs = [seq[::2, ...] for seq in source_seqs]
+    elif mode == 'skipreverse':
+        target_seqs = [seq[::-2, ...] for seq in source_seqs]
+    else:
+        raise ValueError("Mode can only be copy or reverse")
+
+    return source_seqs, target_seqs
