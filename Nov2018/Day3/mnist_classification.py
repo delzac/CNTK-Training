@@ -1,5 +1,5 @@
 import cntk as C
-from cntk.layers import RNNStep, Recurrence, Dense
+from cntk.layers import RNNStep, Recurrence, Dense, LSTM
 from Nov2018.helper import load_data
 
 
@@ -13,7 +13,7 @@ x_train, x_test, y_train, y_test = load_data(data_filepath)
 input_tensor = C.sequence.input_variable(shape=(28, ))
 target_tensor = C.input_variable(shape=(10, ))
 
-hidden_layer = Recurrence(RNNStep(shape=32))(input_tensor)
+hidden_layer = Recurrence(LSTM(shape=32))(input_tensor)
 prediction_tensor = Dense(shape=10, activation=None)(C.sequence.last(hidden_layer))
 
 loss = C.cross_entropy_with_softmax(prediction_tensor, target_tensor)
