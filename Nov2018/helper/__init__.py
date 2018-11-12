@@ -75,17 +75,18 @@ def generate_seq2seq_toy(n: int, vocab_size: int, min_seq_length: int, max_seq_l
     """
 
     seq_lengths = [random.randint(min_seq_length, max_seq_length) for __ in range(n)]
-    source_seqs = [np.array([random.randrange(vocab_size) for __ in range(seq_length)]) for seq_length in seq_lengths]
-    source_seqs = [ohe_labels(seq, vocab_size) for seq in source_seqs]
+    source_seqs = [np.array([random.randrange(vocab_size) for __ in range(seq_length)])
+                   for seq_length in seq_lengths]
+    source_seqs = [ohe_labels(seq, vocab_size + 2) for seq in source_seqs]
 
     if mode == 'copy':
         target_seqs = source_seqs
     elif mode == 'reverse':
         target_seqs = [seq[::-1, ...] for seq in source_seqs]
     elif mode == 'skipcopy':
-        target_seqs = [seq[::2, ...] for seq in source_seqs]
+        target_seqs = [np.concatenate((seq, ohe_labels(np.array([vocab_size + 1]), vocab_size + 2)), axis=0)[::2, ...] for seq in source_seqs]
     elif mode == 'skipreverse':
-        target_seqs = [seq[::-2, ...] for seq in source_seqs]
+        target_seqs = [(seq + ohe_labels([vocab_size + 1]))[::-2, ...] for seq in source_seqs]
     else:
         raise ValueError("Mode can only be copy or reverse")
 
